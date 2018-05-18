@@ -1,8 +1,4 @@
-#Triggers a machine policy update
-<#
-([wmiclass]'ROOT\ccm:SMS_Client').TriggerSchedule('{00000000-0000-0000-0000-000000000021}')
-#>
-$ServerLog = '\\global_server\public\Windows_10_Migration\WallOfWonder'
+$ServerLog = ''
 $LocalLog = 'C:\temp\SoftwareInstallStatus'
 $Date = (Get-Date -Format yyyyMMddTHHmmss)
 $CompareDate = Get-Date
